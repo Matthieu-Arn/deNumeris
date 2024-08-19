@@ -19,22 +19,27 @@ h1 {
 
 h3 {
     font-size: medium;
+    margin-bottom: 20px;
 }
 
 .vocative {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 footer {
     text-align: center;
     margin: 30px;
     font-weight: bold;
-}
+    /* position: fixed; */
+   }
 
 #hero {
-    height: 500px;
+    height: 70vh;
     width: 100%;
     background: url("../images/coliseum_portrait_optimised.webp") no-repeat center center/cover;
+    
     position: relative;
 
     /* animation-name: hero-zoom;
@@ -52,40 +57,28 @@ footer {
 }
 
 /* Interactive Area */
-#userInput {
-    border: solid 1px rgb(198, 211, 178);
-    color: rgb(91, 94, 88);
-    display: inline-block;
-    height: 40px;
-    width: 130px;
+#userValue {
     margin: 10px;
-    font-family: "Cormorant Garamond", sans-serif;
-    text-align: center;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
-
-#userVvalue {
-    margin: 10px;
-    color: rgb(91, 94, 88);
+    width: 120px;
+    color: rgb(57, 58, 55);
     background-color: #ffffff;
+    text-transform: uppercase;
     font-family: "Cormorant Garamond", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
 }
 
 .btn-submit {
-    color: rgb(91, 94, 88);
-    font-size: 1.2rem;
-    text-transform: uppercase;
+    color: rgb(57, 58, 55);
     margin: 10px;
+    padding: 10px 30px;
+    text-transform: uppercase;
     font-family: "Cormorant Garamond", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
 }
-
-button {
-    font-family: "Cormorant Garamond", sans-serif;
-}
-
 
 .interactive-area {
     background: #ffffff;
@@ -96,13 +89,56 @@ button {
     width: 50%;
     max-width: 500px;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
+/* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
     h3 {
-        font-size: larger;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    #hero {
+        height: 70vh;
+    }
+
+    footer{
+        font-size: 1.5rem;
     }
 }
+
+@media screen and (min-height: 640px) {
+    #hero {
+        height: 72vh;
+    }
+}
+
+@media screen and (min-height: 720px) {
+    #hero {
+        height: 75vh;
+    }
+}
+
+@media screen and (min-height: 840px) {
+    #hero {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-height: 900px) {
+    #hero {
+        height: 82vh;
+    }
+}
+
+
