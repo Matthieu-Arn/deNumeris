@@ -25,7 +25,6 @@ footer {
     text-align: center;
     margin: 30px;
     font-weight: bold;
-    
 }
 
 #hero {
@@ -52,6 +51,6 @@ footer {
 /* Media Queries */
 @media screen and (min-width: 576px) {
     h3 {
-        font-size: large;
+        font-size: larger;
     }
 }
