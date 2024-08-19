@@ -21,6 +21,10 @@ h3 {
     font-size: medium;
 }
 
+.vocative {
+    text-transform: uppercase;
+}
+
 footer {
     text-align: center;
     margin: 30px;
@@ -47,6 +51,20 @@ footer {
     }
 }
 
+
+
+.interactive-area {
+    background: #ffffff;
+    opacity: 0.85;
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgb(198, 211, 178);
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 0px;
+    text-align: center;
+}
 
 /* Media Queries */
 @media screen and (min-width: 576px) {
