@@ -3,6 +3,38 @@
 
 
 body {
-    background-color: aqua;
+    background-color: rgb(198, 211, 178);
     font-family: "Cormorant Garamond", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: medium;
+}
+
+footer {
+    text-align: center;
+}
+
+body #hero {
+    height: 500px;
+    width: 100%;
+    background: url("../images/coliseum_portrait_optimised.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 576px) {
+    h3 {
+        font-size: large;
+    }
 }
