@@ -14,6 +14,7 @@ header {
 h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-bottom: -15px;
 }
 
 h3 {
@@ -22,13 +23,29 @@ h3 {
 
 footer {
     text-align: center;
+    margin: 30px;
+    font-weight: bold;
+    
 }
 
-body #hero {
+#hero {
     height: 500px;
     width: 100%;
     background: url("../images/coliseum_portrait_optimised.webp") no-repeat center center/cover;
     position: relative;
+
+    /* animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes hero-zoom {
+    0% {
+        transform: scale(.95);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
 
 
