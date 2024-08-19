@@ -1,39 +1,31 @@
 console.log(`Hello there`);
 
 
-// let userInput = parseInt(document.getElementById("input-value").value);
 
-//const userInput = document.getElementById("input-value").value;
+function handleForm(event) {
+    let form = event.target;
+    let input = form.userValue.value;
 
-let userInput = 1234;               console.log(userInput);
+    console.log(input);
 
-let tempInput = userInput.toString(10);
+    let userOutput = returnRoman(input);
 
-let inputLength = tempInput.length; console.log(inputLength);
-
-
-console.log(typeof userInput);
-
-myType = typeof(Number(userInput));
-console.log(myType);
-
-if (myType === "number") {
-    console.log("Arabic number detected!");
-    console.log(userInput);
-} else {
-    console.log("Roman numeral detected");
+    let result = document.getElementById("userOutput");
+    result.innerText = userOutput;
 }
 
 
+function returnRoman(input) {
+    let userOutput = "SPQR";
+    let myString = input.toString(10);
+    let myLength = myString.length;
+    // console.log(myLength);
 
-// if (Number.isInteger(userInput)){
-//     console.log("Arabic integer number detected");
-// }
+    for (let i=myLength; i>0; i--){
+        console.log(i);
 
+    }
+    console.log("Done");
 
-// console.log(isNumeric(userInput));
-
-
-// function isNumeric(value) {
-//     return !isNaN(parseInt(value));
-// }
+    return userOutput;
+}

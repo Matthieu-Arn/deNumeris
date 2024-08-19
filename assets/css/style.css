@@ -52,7 +52,7 @@ footer {
 }
 
 /* Interactive Area */
-#input-value {
+#userInput {
     border: solid 1px rgb(198, 211, 178);
     color: rgb(91, 94, 88);
     display: inline-block;
@@ -65,7 +65,7 @@ footer {
     text-transform: uppercase;
 }
 
-#output-value {
+#userVvalue {
     margin: 10px;
     color: rgb(91, 94, 88);
     background-color: #ffffff;

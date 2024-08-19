@@ -26,11 +26,13 @@
                         its equivalent by pressing the submit button.
                     <p class="vocative">Ave atque vale!</p>
                 </div>
-                <input id="input-value" type="number">
-                <br>
-                <button data-type="submit" class="btn-submit">Ite ! Go!</button>
-                <br>
-                <div id="output-value">Output Value Field</div>
+                <form onsubmit="handleForm(event)">
+                    <input type="number" id="userValue" name="userValue" required>
+                    <br>
+                    <button data-type="submit" class="btn-submit">Ite ! Go!</button>
+                    <br>
+                    <div id="userOutput">&nbsp;</div>
+                </form>
             </div>
         </section>
 
