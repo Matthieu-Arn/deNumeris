@@ -9,6 +9,7 @@ body {
 
 header {
     text-align: center;
+    height: 10vh;
 }
 
 h1 {
@@ -32,11 +33,11 @@ footer {
     text-align: center;
     margin: 30px;
     font-weight: bold;
-    /* position: fixed; */
-   }
+    height: 10vh;
+}
 
 #hero {
-    height: 70vh;
+    height: 65vh;
     width: 100%;
     background: url("../images/coliseum_portrait_optimised.webp") no-repeat center center/cover;
     
@@ -108,16 +109,16 @@ footer {
         margin-bottom: 20px;
     }
 
-    #hero {
+    /* #hero {
         height: 70vh;
-    }
+    } */
 
     footer{
         font-size: 1.5rem;
     }
 }
 
-@media screen and (min-height: 640px) {
+/* @media screen and (min-height: 640px) {
     #hero {
         height: 72vh;
     }
@@ -140,5 +141,5 @@ footer {
         height: 82vh;
     }
 }
-
+ */
 
