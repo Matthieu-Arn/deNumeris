@@ -51,6 +51,40 @@ footer {
     }
 }
 
+/* Interactive Area */
+#input-value {
+    border: solid 1px rgb(198, 211, 178);
+    color: rgb(91, 94, 88);
+    display: inline-block;
+    height: 40px;
+    width: 130px;
+    margin: 10px;
+    font-family: "Cormorant Garamond", sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#output-value {
+    margin: 10px;
+    color: rgb(91, 94, 88);
+    background-color: #ffffff;
+    font-family: "Cormorant Garamond", sans-serif;
+    text-align: center;
+}
+
+.btn-submit {
+    color: rgb(91, 94, 88);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: "Cormorant Garamond", sans-serif;
+    text-align: center;
+}
+
+button {
+    font-family: "Cormorant Garamond", sans-serif;
+}
 
 
 .interactive-area {
@@ -61,7 +95,7 @@ footer {
     box-shadow: 0 4px 8px rgb(198, 211, 178);
     width: 50%;
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
     margin-top: 0px;
     text-align: center;
 }
