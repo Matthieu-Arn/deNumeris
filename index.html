@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Tags for Search Engines -->
+    <meta name="description"
+        content="De Numeris offers a simple and fast application to convert Arabic numbers into Roman numerals, and back.">
+    <meta name="keywords"
+        content="Roman numerals, Arabic numbers, conversion algorithm, translation conversion algorithm">
+    <meta name="author" content="Catalaunensis">
     <title>&#x1F3DB De Numeris</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -23,12 +29,14 @@
                 <div class="text-area">
                     <p class="vocative">Ave Domina Domineque!</h5>
                     <p>Enter a value of your choosing in either Roman or Arabic notation in the field below, and find
-                        its equivalent by pressing the submit button.
+                        its equivalent by pressing the button.</p>
                     <p class="vocative">Ave atque vale!</p>
                 </div>
-                <!-- <form onsubmit="handleForm(event)"> -->
-                <form onsubmit="event.preventDefault()">
-                    <input type="number" id="userValue" name="userValue" required>
+                <form onsubmit="handleForm(event)">
+                <!-- <form onsubmit="event.preventDefault()"> -->
+                    <!-- <input type="number" id="userValue" name="userValue" required> -->
+                    <input type="text" id="userValue" name="userValue" required>
+                    <input type="reset" id="resetField" value="&#x1F504" alt="Clear the input field">
                     <br>
                     <button data-type="submit" class="btn-submit">Ite!</button>
                     <br>
@@ -44,6 +52,7 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/ec3fd166e9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,17 +1,34 @@
-
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded and parsed");
   });
 
+ 
 
 function handleForm(event) {
+    event.preventDefault();
     let form = event.target;
     let input = form.userValue.value;
-
     console.log(input);
 
+
+    // IF STARTING FROM A ROMAN NUMERAL
+    // Check first if number submitted is legit
+    
+
+    // IF STARTING FROM AN ARABIC NUMBER
+    if (input >= 4000 || input <=0) {
+        if (input >= 4000) {
+            alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is too high, try a value striclty under 4,000.`)
+        } else {
+            alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   Romans do not deal in null or negative numbers.`)
+        }
+    }
+    
     let userOutput = returnRoman(input);
 
+
+
+    // VALUE RETURNED TO THE DOM
     let result = document.getElementById("userOutput");
     result.innerText = userOutput;
 }

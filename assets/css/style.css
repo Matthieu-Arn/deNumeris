@@ -37,7 +37,7 @@ footer {
 }
 
 #hero {
-    height: 65vh;
+    height: 70vh;
     width: 100%;
     background: url("../images/coliseum_portrait_optimised.webp") no-repeat center center/cover;
     
@@ -58,16 +58,43 @@ footer {
 }
 
 /* Interactive Area */
+
 #userValue {
-    margin: 10px;
+    margin: 10px 0;
     width: 120px;
     color: rgb(57, 58, 55);
-    background-color: #ffffff;
+    background-color: #cfc7c7;
     text-transform: uppercase;
     font-family: "Cormorant Garamond", sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    border: solid 1px rgb(57, 58, 55);
+}
+
+#userOutput {
+    color: rgb(57, 58, 55);
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+}
+
+#resetField {
+    margin: 0;
+    width: auto;
+    padding: 0;
+    color: rgb(57, 58, 55);
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
 }
 
 .btn-submit {
@@ -84,16 +111,17 @@ footer {
 .interactive-area {
     background: #ffffff;
     opacity: 0.85;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 0px;
     box-shadow: 0 4px 8px rgb(198, 211, 178);
-    width: 50%;
+    width: 90%;
     max-width: 500px;
     margin: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
+    align-content: center;
 }
 
 /* MEDIA QUERIES */
