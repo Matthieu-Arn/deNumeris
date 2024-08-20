@@ -9,28 +9,63 @@ function handleForm(event) {
     let form = event.target;
     let input = form.userValue.value;
     console.log(input);
-
-
+    
     // IF STARTING FROM A ROMAN NUMERAL
     // Check first if number submitted is legit
-    
+    input = input.toUpperCase();
 
-    // IF STARTING FROM AN ARABIC NUMBER
-    if (input >= 4000 || input <=0) {
-        if (input >= 4000) {
-            alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is too high, try a value striclty under 4,000.`)
-        } else {
-            alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   Romans do not deal in null or negative numbers.`)
-        }
+
+    if (checkInput(input) == 0) {
+        console.log("Yeah!");
+        userOutput = returnArabic(input);
+    } else {
+        alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is not recognised as a valid Roman numeral.`); 
+        userOutput = "";
     }
     
-    let userOutput = returnRoman(input);
+
+    // // IF STARTING FROM AN ARABIC NUMBER
+    // if (input >= 4000 || input <=0) {
+    //     if (input >= 4000) {
+    //         alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is too high, try a value striclty under 4,000.`)
+    //     } else {
+    //         alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   Romans do not deal in null or negative numbers.`)
+    //     }
+    // }
+    
+    // let userOutput = returnRoman(input);
 
 
 
     // VALUE RETURNED TO THE DOM
     let result = document.getElementById("userOutput");
     result.innerText = userOutput;
+}
+
+/**
+ * This function returns the Arabic number equivalent of a 
+ * Roman numeral
+ * input = user input after check
+ */
+function returnArabic(input) {
+    
+
+}
+
+
+function checkInput(input) {
+    trueStock = ["I", "V", "X", "L", "C", "D", "M"];
+    checkStack = 0;
+
+    for (let i = 0; i < input.length;  i++) {
+        checkStep = trueStock.includes(input[i]);
+    
+        if (checkStep === false) {
+            checkStack = checkStack + 1;
+        } else {checkStack = checkStack + 0}
+        console.log(checkStack);
+    }
+    return checkStack;
 }
 
 /**
