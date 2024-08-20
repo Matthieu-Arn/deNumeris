@@ -51,14 +51,25 @@ function returnArabic(input) {
     romanStock = ["I", "V", "X", "L", "C", "D", "M"];
     romanValue = [1, 5, 10, 50, 100, 500, 1000];
     arabicValue = 0;
+    previousValue = 0;
     
-
     for (i = 0; i < input.length; i++) {
         
         for (j=0; j < romanStock.length; j++) {
             if (input[i] == romanStock[j]) {
+                
+                if (i > 0) {
+                    console.log(`We are in ${i} for ${j}`);
+                    console.log(`Prev is ${previousValue} while current is ${romanValue[j]}`);
+                    if (previousValue < romanValue[j]) {
+                        console.log(`going backwards`);
+                    }
+                }
+
                 arabicValue = arabicValue + romanValue[j];
+                previousValue = romanValue[j];
             }
+            
         }
         console.log(arabicValue);
     }
