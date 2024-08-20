@@ -63,7 +63,6 @@ function returnArabic(input) {
     previousValue = 0;
     
     for (i = 0; i < input.length; i++) {
-        
         for (j=0; j < romanStock.length; j++) {
             if (input[i] == romanStock[j]) {
                 

@@ -48,9 +48,9 @@ footer {
     
     position: relative;
 
-    /* animation-name: hero-zoom;
+    animation-name: hero-zoom;
     animation-duration: 5s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
 @keyframes hero-zoom {
@@ -63,7 +63,6 @@ footer {
 }
 
 /* Interactive Area */
-
 #userValue {
     margin: 10px 0;
     width: 140px;
