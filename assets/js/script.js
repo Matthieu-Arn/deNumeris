@@ -10,37 +10,38 @@ resetButton.addEventListener("click", function(){
     // alert(`Reset button was clicked`);
 });
 
+// Main Function calling the various subroutines depending on input
 function handleForm(event) {
     event.preventDefault();
     let form = event.target;
     let input = form.userValue.value;
     
-    // IF STARTING FROM A ROMAN NUMERAL
-    // Check first if number submitted is legit
-    input = input.toUpperCase();
+    console.log(input);
+    console.log(typeof(input));
 
-
-    if (checkInput(input) == 0) {
-        userOutput = returnArabic(input);
+    if (checkArabic(input)) {
+        console.log(` here ${checkArabic(input)}`);
+        // IF STARTING FROM AN ARABIC NUMBER
+        if (input >= 4000 || input <=0) {
+            if (input >= 4000) {
+                alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is too high, try a value striclty under 4,000.`)
+            } else {
+                alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   Romans do not deal in null or negative numbers.`)
+            }
+            userOutput = returnRoman(input);
+        }
     } else {
-        alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is not recognised as a valid Roman numeral.`); 
-        userOutput = "";
-    }
+            // IF STARTING FROM A ROMAN NUMERAL
+            // Check first if number submitted is a legitimate Roman numeral
+            input = input.toUpperCase();
+            if (checkInput(input) == 0) {
+                userOutput = returnArabic(input);
+            } else {
+                alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is not recognised as a valid Roman numeral.`); 
+                userOutput = "";
+            }
+        }
     
-
-    // // IF STARTING FROM AN ARABIC NUMBER
-    // if (input >= 4000 || input <=0) {
-    //     if (input >= 4000) {
-    //         alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is too high, try a value striclty under 4,000.`)
-    //     } else {
-    //         alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   Romans do not deal in null or negative numbers.`)
-    //     }
-    // }
-    
-    // let userOutput = returnRoman(input);
-
-
-
     // VALUE RETURNED TO THE DOM
     let result = document.getElementById("userOutput");
     result.innerText = userOutput;
@@ -89,7 +90,6 @@ function checkInput(input) {
         if (checkStep === false) {
             checkStack = checkStack + 1;
         } else {checkStack = checkStack + 0}
-        console.log(checkStack);
     }
     return checkStack;
 }
@@ -138,3 +138,10 @@ function returnRomanStep(place, digit) {
     return addPlaceValue;
 }
 
+/**
+ * Check the user input is an integer
+ * Returns boolean
+ */
+function checkArabic(value) {
+    return !isNaN(Number(value));
+  }

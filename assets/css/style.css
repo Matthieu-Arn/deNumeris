@@ -29,6 +29,11 @@ h3 {
     font-size: 1.3rem;
 }
 
+.laius {
+    padding: 10px;
+    margin: 10px;
+}
+
 footer {
     text-align: center;
     margin: 30px;
