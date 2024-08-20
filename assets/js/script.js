@@ -63,17 +63,17 @@ function returnArabic(input) {
                     console.log(`Prev is ${previousValue} while current is ${romanValue[j]}`);
                     if (previousValue < romanValue[j]) {
                         console.log(`going backwards`);
+                        arabicValue = arabicValue + romanValue[j] - previousValue;
+                    } else {
+                        arabicValue = arabicValue + romanValue[j];
                     }
-                }
-
-                arabicValue = arabicValue + romanValue[j];
+                } 
                 previousValue = romanValue[j];
             }
-            
         }
         console.log(arabicValue);
     }
-
+    return userOutput;
 }
 
 
