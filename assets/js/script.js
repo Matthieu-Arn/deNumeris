@@ -18,6 +18,7 @@ function handleForm(event) {
     if (checkInput(input) == 0) {
         console.log("Yeah!");
         userOutput = returnArabic(input);
+        console.log(`userOutput is ${userOutput}`);
     } else {
         alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is not recognised as a valid Roman numeral.`); 
         userOutput = "";
@@ -62,18 +63,21 @@ function returnArabic(input) {
                     console.log(`We are in ${i} for ${j}`);
                     console.log(`Prev is ${previousValue} while current is ${romanValue[j]}`);
                     if (previousValue < romanValue[j]) {
-                        console.log(`going backwards`);
-                        arabicValue = arabicValue + romanValue[j] - previousValue;
+                        console.log(`going backwards @ i ${i} and j ${j} with ArVal ${arabicValue} Prev ${previousValue} and Curr ${romanValue[j]}`);
+                        arabicValue = arabicValue - previousValue + romanValue[j] - previousValue;
                     } else {
+                        console.log(`going forwards`);
                         arabicValue = arabicValue + romanValue[j];
                     }
-                } 
+                } else {
+                    arabicValue = arabicValue + romanValue[j];
+                }
                 previousValue = romanValue[j];
             }
         }
         console.log(arabicValue);
     }
-    return userOutput;
+    return arabicValue;
 }
 
 
