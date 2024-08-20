@@ -48,7 +48,20 @@ function handleForm(event) {
  * input = user input after check
  */
 function returnArabic(input) {
+    romanStock = ["I", "V", "X", "L", "C", "D", "M"];
+    romanValue = [1, 5, 10, 50, 100, 500, 1000];
+    arabicValue = 0;
     
+
+    for (i = 0; i < input.length; i++) {
+        
+        for (j=0; j < romanStock.length; j++) {
+            if (input[i] == romanStock[j]) {
+                arabicValue = arabicValue + romanValue[j];
+            }
+        }
+        console.log(arabicValue);
+    }
 
 }
 
