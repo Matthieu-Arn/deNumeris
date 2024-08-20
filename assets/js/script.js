@@ -2,13 +2,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded and parsed");
   });
 
- 
+// Reset the output field when clicking reset (ble refresh arrows)
+const resetButton = document.getElementById('resetField');
+resetButton.addEventListener("click", function(){
+    let blankField = document.getElementById("userOutput");
+    blankField.innerText = "";
+    // alert(`Reset button was clicked`);
+});
 
 function handleForm(event) {
     event.preventDefault();
     let form = event.target;
     let input = form.userValue.value;
-    console.log(input);
     
     // IF STARTING FROM A ROMAN NUMERAL
     // Check first if number submitted is legit
@@ -16,9 +21,7 @@ function handleForm(event) {
 
 
     if (checkInput(input) == 0) {
-        console.log("Yeah!");
         userOutput = returnArabic(input);
-        console.log(`userOutput is ${userOutput}`);
     } else {
         alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is not recognised as a valid Roman numeral.`); 
         userOutput = "";
@@ -60,13 +63,9 @@ function returnArabic(input) {
             if (input[i] == romanStock[j]) {
                 
                 if (i > 0) {
-                    console.log(`We are in ${i} for ${j}`);
-                    console.log(`Prev is ${previousValue} while current is ${romanValue[j]}`);
                     if (previousValue < romanValue[j]) {
-                        console.log(`going backwards @ i ${i} and j ${j} with ArVal ${arabicValue} Prev ${previousValue} and Curr ${romanValue[j]}`);
                         arabicValue = arabicValue - previousValue + romanValue[j] - previousValue;
                     } else {
-                        console.log(`going forwards`);
                         arabicValue = arabicValue + romanValue[j];
                     }
                 } else {
@@ -75,7 +74,6 @@ function returnArabic(input) {
                 previousValue = romanValue[j];
             }
         }
-        console.log(arabicValue);
     }
     return arabicValue;
 }
@@ -139,3 +137,4 @@ function returnRomanStep(place, digit) {
 
     return addPlaceValue;
 }
+
