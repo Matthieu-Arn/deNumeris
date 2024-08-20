@@ -15,12 +15,15 @@ function handleForm(event) {
     event.preventDefault();
     let form = event.target;
     let input = form.userValue.value;
+    let userOutput = {};
     
     console.log(input);
     console.log(typeof(input));
 
     if (checkArabic(input)) {
         console.log(` here ${checkArabic(input)}`);
+        input = Number(input);
+        // console.log(typeof(input));
         // IF STARTING FROM AN ARABIC NUMBER
         if (input >= 4000 || input <=0) {
             if (input >= 4000) {
@@ -28,8 +31,9 @@ function handleForm(event) {
             } else {
                 alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   Romans do not deal in null or negative numbers.`)
             }
-            userOutput = returnRoman(input);
         }
+        userOutput = returnRoman(input);
+        console.log(userOutput);
     } else {
             // IF STARTING FROM A ROMAN NUMERAL
             // Check first if number submitted is a legitimate Roman numeral
@@ -37,7 +41,7 @@ function handleForm(event) {
             if (checkInput(input) == 0) {
                 userOutput = returnArabic(input);
             } else {
-                alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is not recognised as a valid Roman numeral.`); 
+                alert(`EHEU! \n   All roads lead to Rome but not to this answer! \n   ${input} is not recognised as a valid input.`); 
                 userOutput = "";
             }
         }
