@@ -6,7 +6,8 @@ The page is deployed here: https://matthieu-arn.github.io/deNumeris/
 **De Numeris** (*Of Numbers*) is a simple-to-use HTMLweb-based application to convert numbers from the Arabic system (using place value notation) to the Roman numerals system (using subtractive notation) and back.
 This site is useful for curious-minded people who wish to translate monumental date inscriptions on the go, and more generally for those who wish to play around with numbers.
 
-![Am I Reponsive output for the De Numeris application](<assets/documentation/responsiveness/deNumeris Am I Responsive.jpg>)
+<img src="documentation/responsivity/deNumeris Am I Responsive.jpg" width="700" alt="Am I Reponsive output for the De Numeris application">
+
 
 ## User Experience
 
@@ -53,11 +54,10 @@ This site is useful for curious-minded people who wish to translate monumental d
 ### Wireframes
   - Wireframes were created in Balsamiq prior to development, in order to gauge proportions and overall organisations of the page on different devices/screen sizes
 
-![De Numeris wireframe for mobile phone type devices](<assets/documentation/wireframes/deNumeris_Wireframe_1.jpg>)
+<img src="documentation/wireframes/deNumeris_Wireframe_1.jpg" alt="De Numeris wireframe for mobile type devices" height="400">
+<img src="documentation/wireframes/deNumeris_Wireframe_2.jpg" alt="De Numeris wireframe for tablet type devices" height="400">
+<img src="documentation/wireframes/deNumeris_Wireframe_3.jpg" alt="De Numeris wireframe for desktop type devices" height="400">
 
-![De Numeris wireframe for tablet type devices](<assets/documentation/wireframes/deNumeris_Wireframe_2.jpg>)
-
-![De Numeris wireframe for desktop type devices](<assets/documentation/wireframes/deNumeris_Wireframe_3.jpg>)
 
 
 ## Technologies Used
@@ -98,15 +98,17 @@ This site is useful for curious-minded people who wish to translate monumental d
 ## Testing
 
 ### HTML Validation
-![De Numeris HTML validation output using HTML Validator](<assets/documentation/validation/deNumeris HTML validation.jpg>)
+<img src="documentation/validation/deNumeris HTML validation.jpg" width="1000" alt="De Numeris HTML validation output using HTML Validator">
+
 
 ### CSS Validation
-![De Numeris CSS validation output using CSS Validator](<assets/documentation/validation/deNumeris CSS validation.jpg>)
+<img src="documentation/validation/deNumeris CSS validation.jpg" width="1000" alt="De Numeris CSS validation output using CSS Validator">
 
 ### JavaScript Validation
+<img src="documentation/validation/deNumeris JS validation.jpg" width="1000" alt="De Numeris JS validation output using JSHint">
 
 ### Lighthouse
-![De Numeris Lighthouse report using Google DevTools](<assets/documentation/validation/deNumeris Lighthouse report.jpg>)
+<img src="documentation/validation/deNumeris Lighthouse report.jpg" width="1000" alt="De Numeris Lighthouse report using Google DevTools">
 
 ### Browser Compatibility
   - Testing was carried out on the following:
