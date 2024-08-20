@@ -100,7 +100,6 @@ This site is useful for curious-minded people who wish to translate monumental d
 ### HTML Validation
 <img src="documentation/validation/deNumeris HTML validation.jpg" width="1000" alt="De Numeris HTML validation output using HTML Validator">
 
-
 ### CSS Validation
 <img src="documentation/validation/deNumeris CSS validation.jpg" width="1000" alt="De Numeris CSS validation output using CSS Validator">
 

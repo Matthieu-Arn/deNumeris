@@ -55,10 +55,10 @@ footer {
 
 @keyframes hero-zoom {
     0% {
-        transform: scale(.95);
+        transform: scale(.90);
     }
     100% {
-        transform: scale(1.05);
+        transform: scale(1.00);
     }
 }
 
@@ -115,13 +115,11 @@ footer {
 .interactive-area {
     background: #ffffff;
     opacity: 0.85;
-    /* padding: 10px; */
     border-radius: 0px;
     box-shadow: 0 4px 8px rgb(198, 211, 178);
     width: 90%;
     max-width: 500px;
     margin: auto;
-    /* margin-top: 20px; */
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
@@ -141,37 +139,11 @@ footer {
         margin-bottom: 20px;
     }
 
-    /* #hero {
-        height: 70vh;
-    } */
+ 
 
     footer{
         font-size: 1.5rem;
     }
 }
 
-/* @media screen and (min-height: 640px) {
-    #hero {
-        height: 72vh;
-    }
-}
-
-@media screen and (min-height: 720px) {
-    #hero {
-        height: 75vh;
-    }
-}
-
-@media screen and (min-height: 840px) {
-    #hero {
-        height: 78vh;
-    }
-}
-
-@media screen and (min-height: 900px) {
-    #hero {
-        height: 82vh;
-    }
-}
- */
 

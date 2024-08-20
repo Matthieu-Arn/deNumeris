@@ -7,7 +7,6 @@ const resetButton = document.getElementById('resetField');
 resetButton.addEventListener("click", function(){
     let blankField = document.getElementById("userOutput");
     blankField.innerText = "";
-    // alert(`Reset button was clicked`);
 });
 
 // Main Function calling the various subroutines depending on input
@@ -23,7 +22,6 @@ function handleForm(event) {
     if (checkArabic(input)) {
         console.log(` here ${checkArabic(input)}`);
         input = Number(input);
-        // console.log(typeof(input));
         // IF STARTING FROM AN ARABIC NUMBER
         if (input >= 4000 || input <=0) {
             if (input >= 4000) {
@@ -111,10 +109,7 @@ function returnRoman(input) {
     console.log(myGnirts);
 
     for (let i = 0; i <myLength; i++) {
-        // console.log("my i");
-        // console.log(i);
-        userOutput = returnRomanStep(i, myGnirts[i]) + userOutput;
-        // console.log(userOutput);
+         userOutput = returnRomanStep(i, myGnirts[i]) + userOutput;
     }
     
     return userOutput;
