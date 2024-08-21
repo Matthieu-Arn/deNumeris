@@ -1,5 +1,6 @@
+<br/>
 <h1 align="center">De Numeris</h1>
-
+<br/>
 The page is deployed here: https://matthieu-arn.github.io/deNumeris/
 
 
@@ -9,7 +10,9 @@ This site is useful for curious-minded people who wish to translate monumental d
 <img src="documentation/responsivity/deNumeris Am I Responsive.jpg" width="700" alt="Am I Reponsive output for the De Numeris application">
 
 
-#### Table of Contents
+<br/>
+
+## Table of Contents
   - [User Experience](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#user-experience)
   - [Design](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#design)
   - [Technologies Used](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#technologies-used)
@@ -17,6 +20,7 @@ This site is useful for curious-minded people who wish to translate monumental d
   - [Deployment](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#deployment)
   - [Credits](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#credits)
 
+<br/>
 
 ## User Experience
 
@@ -25,6 +29,7 @@ This site is useful for curious-minded people who wish to translate monumental d
  - As a **user**, I want to **enter a number in Arabic notation in the required field**, so that **I can get its equivalent in Roman numeral form**.
  - As a **user**, I want to **interact with a simple interface**, so that **I can get answers rapidly**.
 
+<br/>
 
 ## Features
 
@@ -39,14 +44,23 @@ This site is useful for curious-minded people who wish to translate monumental d
       - The input field accepts numbers between 1 and 3,999 (included) in either notation 
       - The submit button, when pressed, returns the translated figure in the output field
       - The refresh button, when pressed, clears both input and output fields
+  - Functionality
+      - The input field accepts entries in eiter system and will return the translated value in the other system
+      - A refresh button allows the user to clear both input and outp fields at once
+      - Error messages (`alert`) are returned when the value entered is not recognised:
+        - A string of mixed digits and letters
+        - A string of letters not recognised as valid Roman numeral symbols
+        - A number (Arabic notation) not belonging to the interval [1, 3999] over which Roman numerals are usually defined
 
 ### Future Features
   - Extra HTML page to provide a brief introduction to the Roman numeral system and the differences with the more widespread Arabic notation
   - Extra JavaScript code to improve the Roman numeral checking function so as to catch legitimate letters used in a nonsensical order e.g.: IVLX
+  - Extra JavaScript code to improve the Roman numeral checking function so as to catch legitimate letters used outside os the defined range e.g.: MMMMM
   - Extra JavaScript code to expand the current value range to allow values in excess of 1 million
   - Extra JavaScript code to expand the current value range to allow fractional values using the duodecimal system
   - Extra JavaScript code to offer a quiz along the lines of "Love Maths" with questions asked in either Arabic or Roman notation and answers to be given in either Arabic or Roman notation
 
+<br/>
 
 ## Design
 
@@ -67,7 +81,7 @@ This site is useful for curious-minded people who wish to translate monumental d
 <img src="documentation/wireframes/deNumeris_Wireframe_2.jpg" alt="De Numeris wireframe for tablet type devices" height="400">
 <img src="documentation/wireframes/deNumeris_Wireframe_3.jpg" alt="De Numeris wireframe for desktop type devices" height="400">
 
-
+<br/>
 
 ## Technologies Used
 
@@ -104,6 +118,7 @@ This site is useful for curious-minded people who wish to translate monumental d
       - Latin Discussion https://latindiscussion.org/
       - Dickinson College Commentaries https://dcc.dickinson.edu/
 
+<br/>
 
 ## Testing
 
@@ -128,10 +143,14 @@ This site is useful for curious-minded people who wish to translate monumental d
 
 ### Known Bugs
   - Known responsive design issues across different screen sizes
+ 
+<br/>
 
 ## Deployment
   - The site was deployed from the early stages of development using GitHub
   - The live site can be found here: https://matthieu-arn.github.io/deNumeris/
+
+<br/>
 
 ## Credits
 
