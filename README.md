@@ -1,4 +1,4 @@
-# **De Numeris** 
+<h1 align="center">De Numeris</h1>
 
 The page is deployed here: https://matthieu-arn.github.io/deNumeris/
 
@@ -7,6 +7,15 @@ The page is deployed here: https://matthieu-arn.github.io/deNumeris/
 This site is useful for curious-minded people who wish to translate monumental date inscriptions on the go, and more generally for those who wish to play around with numbers.
 
 <img src="documentation/responsivity/deNumeris Am I Responsive.jpg" width="700" alt="Am I Reponsive output for the De Numeris application">
+
+
+#### Table of Contents
+  - [User Experience](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#user-experience)
+  - [Design](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#design)
+  - [Technologies Used](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#technologies-used)
+  - [Testing](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#testing)
+  - [Deployment](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#deployment)
+  - [Credits](https://github.com/Matthieu-Arn/deNumeris/blob/main/README.md#credits)
 
 
 ## User Experience
@@ -88,6 +97,7 @@ This site is useful for curious-minded people who wish to translate monumental d
       - CSS Validator https://jigsaw.w3.org/css-validator/
       - JavaScript Validator https://jshint.com/
       - Google DevTools https://developer.chrome.com/docs/devtools
+      - ReadMe file https://github.com/elainebroche-dev/ms1-thrive/tree/master
     - Background Information
       - Wikipedia https://en.wikipedia.org/wiki/Main_Page
       - Wiktionary https://en.wiktionary.org/wiki/Wiktionary:Main_Page
@@ -127,13 +137,14 @@ This site is useful for curious-minded people who wish to translate monumental d
 
 ### Content
   - Original idea and design by the developer
-  - Documentation on Roman numerals from Wikipedia
+  - General bakckground on Roman numerals from Wikipedia
   - Latin text and interjections from various academic sites such as *Latin Discussion* and *Dickinson College Commentaries*
 
 ### Code
   - HTML structure adapted or inspired from several walkthrough projects as provided by the *Code Institute*'s LMS, in particular *Love Running*
   - CSS structure adapted or inspired from several walkthrough projects as provided by the *Code Institute*'s LMS, in particular *Love Running* (zoom effect), *Love Maths*, *BMI Calculator*, etc.
   - JavaScript structure adapted or inspired from several walkthrough projects as provided by the *Code Institute*'s LMS, in particular *Love Maths* and *BMI Calculator*
+  - ReadMe structure adapted from Elaine Roche's *Thrive Juices and Smoothies* website 
   - Algorithm in JavaScript to translate numbers designed by the developer
   - Several issues were resolved using documentation and archived discussion boards available from *W3Schools*, *Stack Overflow*, *She Codes*, etc.
 
